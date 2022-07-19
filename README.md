@@ -10,4 +10,6 @@ command to install library: pip install chess
 
 Lacking gui but terminal interface looks like this:
 
+https://github.com/Ivanini65537/PrimitiveChessEngine/issues/1#issue-1310173190
+
 
