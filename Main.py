@@ -37,30 +37,34 @@ def is_legal_move(player_move):
 
 player_color=input("Welcome to chessy chess engine choose (W)hite or (B)lack pieces ")
 
+
 while (not((player_color.upper() == "B") or (player_color.upper() == "W"))):
         player_color=input("invalid input try again, press B or W ")
 
 
-if player_color.upper()=="W":
-    computer_moves_after=True
+if player_color.upper()=='W':
+        computer_moves_after=True
 else:
-    computer_moves_after=False
+        computer_moves_after=False
 
 
+print("Play your moves so that they include coordinates of begging and ending square, for example e2e4")
 print(board)
-print("play your moves so that they include coordinates of begging and ending square, for example e2e4")
+
 
 while(game_not_over(board)):
+
     if computer_moves_after:
+        print("Your turn to play")
         player_move=input("Play your move ")
         if (is_legal_move(player_move)):
             board.push_san(player_move)
-            print("you have played move")
+            print(f"You have played move {player_move}")
             pause=False
         else:pause=True
 
     if(not pause):
-
+        print("Computers turn")
         computer_move = str(minimax(depth, True, MIN, MAX, board, True))
         board.push_san(computer_move)
         print(f"Computer plays {computer_move}")
@@ -68,3 +72,4 @@ while(game_not_over(board)):
         print(board)
 
 print (board)
+
