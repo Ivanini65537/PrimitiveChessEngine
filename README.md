@@ -15,13 +15,9 @@ Welcome to chessy chess engine choose (W)hite or (B)lack pieces B
 Play your moves so that they include coordinates of begging and ending square, for example e2e4
 
 r n b q k b n r
-
 p p p p p p p p
-
 . . . . . . . .
-
 . . . . . . . .
-
 . . . . . . . .
 . . . . . . . .
 P P P P P P P P
