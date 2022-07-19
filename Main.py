@@ -41,7 +41,7 @@ while (not((player_color.upper() == "B") or (player_color.upper() == "W"))):
         player_color=input("invalid input try again, press B or W ")
 
 
-if player_color.upper=="W":
+if player_color.upper()=="W":
     computer_moves_after=True
 else:
     computer_moves_after=False
